@@ -4,8 +4,6 @@ Official implementation of Hamburger, *[Is Attention Better Than Matrix Decompos
 
 Under construction.
 
----
-
 ## Introduction
 
 This repo provides the official implementation of Hamburger for further research. We sincerely hope that this paper can bring you inspiration about the Attention Mechanism, especially how **the low-rankness and the optimization-driven method** can help model the so-called *Global Information* in deep learning.
@@ -19,8 +17,6 @@ We are working on some exciting topics. Please wait for our new papers!
 Enjoy Hamburger, please!
 
 ## Organization
-
----
 
 This section introduces the organization of this repo.
 
@@ -51,8 +47,6 @@ TODO:
 
 ## Citation
 
----
-
 If you find our work interesting or helpful to your research, please consider citing Hamburger. :)
 
 ```bib
@@ -67,15 +61,12 @@ If you find our work interesting or helpful to your research, please consider ci
 
 ## Contact
 
----
-
 Feel free to contact me if you have additional questions or have interests in collaboration. Please drop me an email at zhengyanggeng@gmail.com. Find me at [Twitter](https://twitter.com/ZhengyangGeng). Thank you!
 
 Response to recent emails may be slightly delayed to March 26th due to the deadlines of ICLR. I feel sorry, but people are always deadline-driven. QAQ
 
 ## Acknowledgments
 
----
 Our research is supported with Cloud TPUs from Google's [Tensorflow Research Cloud (TFRC)](https://www.tensorflow.org/tfrc). Nice and joyful experience with the TFRC program. Thank you!
 
 We would like to sincerely thank [EMANet](https://github.com/XiaLiPKU/EMANet), [PyTorch-Encoding](https://github.com/zhanghang1989/PyTorch-Encoding), [YLG](https://github.com/giannisdaras/ylg/tree/train), and [TF-GAN](https://github.com/tensorflow/gan) for their awesome released code.

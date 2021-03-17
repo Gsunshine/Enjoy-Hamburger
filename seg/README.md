@@ -4,7 +4,6 @@ Official codebase for HamNet on the PASCAL VOC dataset.
 
 ## Introduction
 
----
 We provide the PyTorch implementation of Hamburger (V1) in the paper and an enhanced version (V2) flavored with additional Cheese (1*1 Conv -> BN -> ReLU) between the Ham and the Upper Bread. Some experimental features like the multi-head operation and the spatial-channel ensemble are supported by V2+. This repo contains all three types of Ham, namely NMF, CD, and VQ.
 
 ![contents](../assets/Hamburger.jpg)
@@ -14,8 +13,6 @@ The codebase is modified from [EMANet](https://github.com/XiaLiPKU/EMANet) to su
 From the bottom of our hearts, we hope that our work can inspire and ease your further research.
 
 ## Usage
-
----
 
 ### 1. Installation
 
@@ -79,7 +76,6 @@ Or you can download the processed datasets from this [link](https://pan.baidu.co
 
 ## Checkpoints
 
----
 We offer three checkpoints of HamNet, in which one is 85.90+ with the test server [link](http://host.robots.ox.ac.uk:8080/anonymous/NEHYHH.html), while the other two are 85.80+ with the test server [link 1](http://host.robots.ox.ac.uk:8080/anonymous/HEBCIV.html) and [link 2](http://host.robots.ox.ac.uk:8080/anonymous/3VNCPH.html), respectively.
 
 | Num | Version | mIoU |  r  | Google Drive | Baidu Netdisk | Password |
@@ -100,9 +96,6 @@ Note that the V2+ checkpoints are also simple and *do not* enable the multi-head
 
 ## Statistics
 
----
-
 ## Acknowledgments
 
----
 We would like to sincerely thank [EMANet](https://github.com/XiaLiPKU/EMANet) and [PyTorch-Encoding](https://github.com/zhanghang1989/PyTorch-Encoding) for their awesome released code.
