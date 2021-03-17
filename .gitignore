@@ -127,3 +127,13 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# VSCode
+.vscode/
+
+# Checkpoint
+*.pth
+
+log_dir/*
+eval_log/*
+models/*
