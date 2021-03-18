@@ -27,7 +27,7 @@ This section introduces the organization of this repo.
   - Possible directions based on Hamburger.
   - FAQ.
 - seg.
-  - We provide the implementation of Hamburger (V1) in the paper and an enhanced version (V2) flavored with Cheese in PyTorch. Some experimental features are included in V2+.
+  - We provide the PyTorch implementation of Hamburger (V1) in the paper and an enhanced version (V2) flavored with Cheese. Some experimental features are included in V2+.
   - We release the codebase for systematical research on the PASCAL VOC dataset, including the two-stage training on the `trainaug` and `trainval` datasets and the MSFlip test.
   - We offer three checkpoints of HamNet, in which one is 85.90+ with the test server [link](http://host.robots.ox.ac.uk:8080/anonymous/NEHYHH.html), while the other two are 85.80+ with the test server [link 1](http://host.robots.ox.ac.uk:8080/anonymous/HEBCIV.html) and [link 2](http://host.robots.ox.ac.uk:8080/anonymous/3VNCPH.html). You can reproduce the test results using the checkpoints combined with the MSFlip test code.
   - Statistics about HamNet that might ease further research.
@@ -43,7 +43,7 @@ TODO:
 - [ ] PyTorch Hamburger with less encapsulation.
 - [ ] Suggestions for using and further developing Hamburger.
 - [ ] Blog in both English and Chinese.
-- [ ] ~~We also consider adding a collection of popular context modules in computer vision to this repo.~~ It depends on the time. No Guarantee. Perhaps GuGu 🕊️ (which means standing someone up).
+- [ ] ~~We also consider adding a collection of popular context modules to this repo.~~ It depends on the time. No Guarantee. Perhaps GuGu 🕊️ (which means standing someone up).
 
 ## Citation
 
