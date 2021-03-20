@@ -44,7 +44,7 @@ Or you can download the processed datasets from this [link](https://pan.baidu.co
 ### 4. Pretrained Backbone
 
 - Download the ImageNet pretrained ResNet from [Baidu Netdisk](https://pan.baidu.com/s/1sPht7Qiy7Hv9M5uYVT6beg). The password is *lcfu*. Or you can download the backbone models from [Google Drive](https://drive.google.com/drive/folders/1FXwv1j-qYu2x8dLCvTVWJjAuWyp_Gq_I?usp=sharing).
-- Move the models to the `MODEL_DIR` in the `data_settings.py`.
+- Move the pretrained models to the `MODEL_DIR` in the `data_settings.py`.
 
 ### 5. Training
 
@@ -55,10 +55,10 @@ Or you can download the processed datasets from this [link](https://pan.baidu.co
     ```
 
   - The codebase will output two checkpoints `best_trainaug.pth` and `final_trainaug.pth` trained on the `trainaug` set, and two checkpoints `best.pth` and `final.pth` further trained on the `trainval` set to `MODEL_DIR/EXP_NAME`.
-  - The code will test the model on the PASCAL VOC validation set every `ITER_VAL` iterations and record the best results.
+  - The code will test the model on the PASCAL VOC `val` set every `ITER_VAL` iterations and record the best results.
   - The single scale test results of `best_trainaug.pth` and `final_trainaug.pth` are recorded in the `eval_log/EXP_NAME`.
 
-- To train a models for the validation set, change `RUN_FOR_TEST` to `False`.
+- To train a models for the `val` set, change `RUN_FOR_TEST` to `False`.
 - The default settings lead to HamNet with Hamburger V2, which is the same as this [checkpoint](http://host.robots.ox.ac.uk:8080/anonymous/NEHYHH.html). To enable Hamburger V2+, swap `settings_V2+` and `settings.py`.
 - Set `VERSION` to `V1`, `V2`, or `V2+`, `HAM_TYPE` to `NMF`, `CD`, or `VQ` in the `settings.py`. Recommended hyper-parameters *for the PASCAL VOC dataset* have been shown in the `settings.py`.
 - To use `CD` or `VQ` Ham, change `INV_T` to 10 or 100. Disable `RAND_INIT` for `CD`. Plus, you need to manually employ the `online_update` method.
@@ -71,7 +71,7 @@ Or you can download the processed datasets from this [link](https://pan.baidu.co
     sh msflip_test.sh
     ```
 
-- Move the test results from `/TEST_SAVE_DIR/EXP_NAME` to `results/VOC2012/Segmentation/comp6_test_cls`.
+- Move the test results from `TEST_SAVE_DIR/EXP_NAME` to `results/VOC2012/Segmentation/comp6_test_cls`.
 - Submit the test results to the PASCAL VOC test server in a `tar` file.
 
 ## Checkpoints
