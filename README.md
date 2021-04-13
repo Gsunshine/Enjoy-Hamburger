@@ -4,6 +4,10 @@ Official implementation of Hamburger, *[Is Attention Better Than Matrix Decompos
 
 Under construction.
 
+## Update
+
+- 2020.04.13 - Add poster and thumbnail icon for ICLR 2021.
+
 ## Introduction
 
 This repo provides the official implementation of Hamburger for further research. We sincerely hope that this paper can bring you inspiration about the Attention Mechanism, especially how **the low-rankness and the optimization-driven method** can help model the so-called *Global Information* in deep learning.

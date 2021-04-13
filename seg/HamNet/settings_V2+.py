@@ -50,6 +50,7 @@ VERSION  = 'V2+'
 HAM_TYPE = 'NMF'
 DUAL = False
 SPATIAL = True
+RAND_INIT = True
 ZERO_HAM = True
 
 MD_S = 1
@@ -63,8 +64,6 @@ EVAL_STEPS = 6
 INV_T = 1
 BETA = 0.1
 ETA = 0.9
-
-RAND_INIT = True
 
 
 # Path
