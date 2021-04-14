@@ -4,19 +4,24 @@ Official implementation of Hamburger, *[Is Attention Better Than Matrix Decompos
 
 Under construction.
 
+![icon](pre/Ham_icon.png)
+
+Squirtle (憨憨) invites you to enjoy Hamburger! 憨 shares the same pronunciation as ham, which means simple and plain in Chinese.
+
 ## Update
 
+- 2020.04.14 - Herald the incoming arXiv version concerning implicit models and one-step gradient.
 - 2020.04.13 - Add poster and thumbnail icon for ICLR 2021.
 
 ## Introduction
 
-This repo provides the official implementation of Hamburger for further research. We sincerely hope that this paper can bring you inspiration about the Attention Mechanism, especially how **the low-rankness and the optimization-driven method** can help model the so-called *Global Information* in deep learning.
+This repo provides the official implementation of Hamburger for further research. We sincerely hope that this paper can bring you inspiration about the Attention Mechanism, especially how **the low-rankness and the optimization-driven method** can help model the so-called *Global Information* in deep learning. We also highlight **Hamburger as a semi-implicit model and one-step gradient as an alternative for training both implicit and semi-implicit models**.
 
 We model the global context issue as a low-rank completion problem and show that its optimization algorithms can help design global information blocks. This paper then proposes a series of Hamburgers, in which we employ the optimization algorithms for solving MDs to factorize the input representations into sub-matrices and reconstruct a low-rank embedding. Hamburgers with different MDs can perform favorably against the popular global context module self-attention when carefully coping with gradients back-propagated through MDs.
 
 ![contents](assets/Hamburger.jpg)
 
-We are working on some exciting topics. Please wait for our new papers!
+We are working on some exciting topics. Please wait for our new papers. :)
 
 Enjoy Hamburger, please!
 
@@ -24,11 +29,15 @@ Enjoy Hamburger, please!
 
 This section introduces the organization of this repo.
 
-**We strongly recommend the readers to read the blog (incoming soon) as a supplement to the paper!**
+~~We strongly recommend the readers to read the blog (incoming soon) as a supplement to the paper!~~
+
+**We strongly recommend our readers to enjoy the arXiv version (incoming very soon, about 3~5 days) to more comprehensively understand this paper.**
 
 - blog.
-  - Some random thoughts about Hamburger and beyond.
-  - Possible directions based on Hamburger.
+  - Some random thoughts on Hamburger and beyond.
+  - Connections and differences between Hamburger and implicit models. (incoming arXiv version)
+  - Highlight one-step gradient. (incoming arXiv version)
+  - Possible directions based on Hamburger. (incoming arXiv version)
   - FAQ.
 - seg.
   - We provide the PyTorch implementation of Hamburger (V1) in the paper and an enhanced version (V2) flavored with Cheese. Some experimental features are included in V2+.
@@ -43,10 +52,11 @@ This section introduces the organization of this repo.
 
 TODO:
 
+- [ ] Release the arXiv version.
+- [ ] Blog in both English and Chinese.
 - [ ] README doc for HamGAN.
 - [ ] PyTorch Hamburger with less encapsulation.
 - [ ] Suggestions for using and further developing Hamburger.
-- [ ] Blog in both English and Chinese.
 - [ ] ~~We also consider adding a collection of popular context modules to this repo.~~ It depends on the time. No Guarantee. Perhaps GuGu 🕊️ (which means standing someone up).
 
 ## Citation
@@ -65,9 +75,7 @@ If you find our work interesting or helpful to your research, please consider ci
 
 ## Contact
 
-Feel free to contact me if you have additional questions or have interests in collaboration. Please drop me an email at zhengyanggeng@gmail.com. Find me at [Twitter](https://twitter.com/ZhengyangGeng). Thank you!
-
-Response to recent emails may be slightly delayed to March 26th due to the deadlines of ICLR. I feel sorry, but people are always deadline-driven. QAQ
+Feel free to contact me if you have additional questions or have interests in collaboration. Please drop me an email at zhengyanggeng@gmail.com. Find me at [Twitter](https://twitter.com/ZhengyangGeng) or [WeChat](assets/WeChat.jpg). Thank you!
 
 ## Acknowledgments
 
