@@ -1,12 +1,12 @@
 # Enjoy-Hamburger 🍔
 
-Official implementation of Hamburger, *[Is Attention Better Than Matrix Decomposition?](https://openreview.net/forum?id=1FvkSpWosOl)* (ICLR 2021)
+Official implementation of Hamburger, *[Is Attention Better Than Matrix Decomposition?](https://openreview.net/forum?id=1FvkSpWosOl)* (ICLR 2021, top 3% submission)
 
-Under construction.
-
-![icon](pre/Ham_icon.png)
+<div align=center><img src="pre/Ham_icon.png" width="390" height="260" /></div>
 
 Squirtle (憨憨) invites you to enjoy Hamburger! 憨 shares the same pronunciation as ham, which means simple and plain in Chinese.
+
+Under construction.
 
 ## Update
 
