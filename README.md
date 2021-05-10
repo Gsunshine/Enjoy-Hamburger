@@ -1,6 +1,6 @@
 # Enjoy-Hamburger 🍔
 
-Official implementation of Hamburger, *[Is Attention Better Than Matrix Decomposition?](https://openreview.net/forum?id=1FvkSpWosOl)* (ICLR 2021, top 3% submission)
+Official implementation of Hamburger, *[Is Attention Better Than Matrix Decomposition?](https://openreview.net/forum?id=1FvkSpWosOl)* (ICLR 2021, top 3%)
 
 <div align=center><img src="pre/Ham_icon.png" width="390" height="260" /></div>
 
@@ -10,8 +10,9 @@ Under construction.
 
 ## Update
 
-- 2020.04.14 - Herald the incoming arXiv version concerning implicit models and one-step gradient.
-- 2020.04.13 - Add poster and thumbnail icon for ICLR 2021.
+- 2021.05.10 - Release Chinese [Blog 1](https://zhuanlan.zhihu.com/p/369769485) and [Blog 2](https://zhuanlan.zhihu.com/p/369855045) on Zhihu. Blog 3 is incoming.
+- 2021.04.14 - Herald the incoming arXiv version concerning implicit models and one-step gradient.
+- 2021.04.13 - Add poster and thumbnail icon for ICLR 2021.
 
 ## Introduction
 
@@ -29,15 +30,13 @@ Enjoy Hamburger, please!
 
 This section introduces the organization of this repo.
 
-~~We strongly recommend the readers to read the blog (incoming soon) as a supplement to the paper!~~
-
-**We strongly recommend our readers to enjoy the arXiv version (incoming very soon, about 3~5 days) to more comprehensively understand this paper.**
+**We strongly recommend our readers to enjoy the arXiv version (within one week due to the NeurIPS deadline) or the blogs to more comprehensively understand this paper.**
 
 - blog.
-  - Some random thoughts on Hamburger and beyond.
-  - Connections and differences between Hamburger and implicit models. (incoming arXiv version)
-  - Highlight one-step gradient. (incoming arXiv version)
-  - Possible directions based on Hamburger. (incoming arXiv version)
+  - Some random thoughts on Hamburger and beyond (Chinese [Blog 1](https://zhuanlan.zhihu.com/p/369769485)).
+  - Connections and differences between Hamburger and implicit models. (incoming arXiv version, Chinese [Blog 2](https://zhuanlan.zhihu.com/p/369855045))
+  - Highlight one-step gradient. (incoming arXiv version, Chinese [Blog 2](https://zhuanlan.zhihu.com/p/369855045))
+  - Possible directions based on Hamburger. (incoming arXiv version, incoming Chinese Blog 3)
   - FAQ.
 - seg.
   - We provide the PyTorch implementation of Hamburger (V1) in the paper and an enhanced version (V2) flavored with Cheese. Some experimental features are included in V2+.
@@ -52,10 +51,11 @@ This section introduces the organization of this repo.
 
 TODO:
 
+- [x] Chinese [Blog 1](https://zhuanlan.zhihu.com/p/369769485), [Blog 2](https://zhuanlan.zhihu.com/p/369855045) and Blog 3.
 - [ ] Release the arXiv version.
-- [ ] Blog in both English and Chinese.
+- [ ] English Blog.
 - [ ] README doc for HamGAN.
-- [ ] PyTorch Hamburger with less encapsulation.
+- [ ] PyTorch Hamburger using less encapsulation.
 - [ ] Suggestions for using and further developing Hamburger.
 - [ ] ~~We also consider adding a collection of popular context modules to this repo.~~ It depends on the time. No Guarantee. Perhaps GuGu 🕊️ (which means standing someone up).
 
