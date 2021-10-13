@@ -10,6 +10,9 @@ Under construction.
 
 ## Update
 
+- 2021.10.09 - ...
+- 2021.09.09 - Release the [arXiv](https://arxiv.org/abs/2109.04553) version. This is a short version including some *future works* based Hamburger. A long version concerning the implicit perspective of Hamburger will be updated later.
+- 2021.05.12 - Release Chinese [Blog 3](https://zhuanlan.zhihu.com/p/370410446).
 - 2021.05.10 - Release Chinese [Blog 1](https://zhuanlan.zhihu.com/p/369769485) and [Blog 2](https://zhuanlan.zhihu.com/p/369855045) on Zhihu. Blog 3 is incoming.
 - 2021.04.14 - Herald the incoming arXiv version concerning implicit models and one-step gradient.
 - 2021.04.13 - Add poster and thumbnail icon for ICLR 2021.
@@ -30,13 +33,13 @@ Enjoy Hamburger, please!
 
 This section introduces the organization of this repo.
 
-**We strongly recommend our readers to enjoy the arXiv version (within one week due to the NeurIPS deadline) or the blogs to more comprehensively understand this paper.**
+**We strongly recommend our readers to enjoy the [arXiv](https://arxiv.org/abs/2109.04553) version or the blogs to more comprehensively understand this paper.**
 
 - blog.
   - Some random thoughts on Hamburger and beyond (Chinese [Blog 1](https://zhuanlan.zhihu.com/p/369769485)).
   - Connections and differences between Hamburger and implicit models. (incoming arXiv version, Chinese [Blog 2](https://zhuanlan.zhihu.com/p/369855045))
   - Highlight one-step gradient. (incoming arXiv version, Chinese [Blog 2](https://zhuanlan.zhihu.com/p/369855045))
-  - Possible directions based on Hamburger. (incoming arXiv version, incoming Chinese Blog 3)
+  - Possible directions based on Hamburger. (current [arXiv](https://arxiv.org/abs/2109.04553) version, Chinese [Blog 3](https://zhuanlan.zhihu.com/p/370410446))
   - FAQ.
 - seg.
   - We provide the PyTorch implementation of Hamburger (V1) in the paper and an enhanced version (V2) flavored with Cheese. Some experimental features are included in V2+.
@@ -51,12 +54,12 @@ This section introduces the organization of this repo.
 
 TODO:
 
-- [x] Chinese [Blog 1](https://zhuanlan.zhihu.com/p/369769485), [Blog 2](https://zhuanlan.zhihu.com/p/369855045) and Blog 3.
-- [ ] Release the arXiv version.
+- [x] Chinese [Blog 1](https://zhuanlan.zhihu.com/p/369769485), [Blog 2](https://zhuanlan.zhihu.com/p/369855045) and [Blog 3](https://zhuanlan.zhihu.com/p/370410446).
+- [x] Release the arXiv version.
 - [ ] English Blog.
 - [ ] README doc for HamGAN.
 - [ ] PyTorch Hamburger using less encapsulation.
-- [ ] Suggestions for using and further developing Hamburger.
+- [x] Suggestions for using and further developing Hamburger. (See [arXiv](https://arxiv.org/abs/2109.04553))
 - [ ] ~~We also consider adding a collection of popular context modules to this repo.~~ It depends on the time. No Guarantee. Perhaps GuGu 🕊️ (which means standing someone up).
 
 ## Citation
