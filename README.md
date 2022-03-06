@@ -16,7 +16,7 @@ Squirtle (憨憨) invites you to enjoy Hamburger! 憨 shares the same pronunciat
   | OCRNet    | ResNet-101  | 512x512 | 160000 |  -   | 45.3 | **56M** | 923G  |
   | DNL       | ResNet-101  | 512x512 | 160000 |  -   | 46.0 | 69M | 1249G |
   | HamNet    | ResNet-101  | 512x512 | 160000 | 44.9 | **46.0** | **57M** | **918G**  |
-  | HamNet+   | ResNet-101  | 512x512 | 160000 | 45.6 | **46.8** | 69M | 1111G |
+  | HamNet+   | ResNet-101  | 512x512 | 160000 | [45.6](https://github.com/Gsunshine/Enjoy-Hamburger/blob/main/seg_mm/work_dirs/ham_r101-d8_512x512_160k_ade20k/eval_single_scale_20220304_121400.json) | [**46.8**](https://github.com/Gsunshine/Enjoy-Hamburger/blob/main/seg_mm/work_dirs/ham_r101-d8_512x512_160k_ade20k/eval_multi_scale_20220304_115440.json) | 69M | 1111G |
   | - | - |  - |  - | - | - | - | - |
   | DeeplabV3 | ResNeSt-101 | 512x512 | 160000 | 45.7 | 46.6 | 66M | 1051G |
   | UPerNet   | Swin-T      | 512x512 | 160000 | 44.5 | 45.8 | 60M | 945G  |
