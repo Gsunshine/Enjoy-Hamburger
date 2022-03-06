@@ -6,11 +6,22 @@ Official implementation of Hamburger, *[Is Attention Better Than Matrix Decompos
 
 Squirtle (憨憨) invites you to enjoy Hamburger! 憨 shares the same pronunciation as ham, which means simple and plain in Chinese.
 
-Under construction.
-
 ## Update
 
-- 2021.10.09 - ...
+- 2022.03.06 - Update HamNet using [MMSegmentation](https://github.com/open-mmlab/mmsegmentation). HamNet achieves SOTA performance for ResNet-101 backbone on ADE20K `val` set, enabling R101 to match modern backbones like [ResNeSt](https://github.com/zhanghang1989/ResNeSt), [Swin Transformer](https://github.com/microsoft/Swin-Transformer) or [ConvNeXt](https://github.com/facebookresearch/ConvNeXt) using similar computing budget. Code and [checkpoint](https://drive.google.com/file/d/1ja_SwzMg0a2NFW1d5gqg91QKgJrjuGYy/view?usp=sharing) are available.
+  
+  | Method | Backbone | Crop Size | Lr schd | mIoU (SS) | mIoU (MS) | Params | FLOPs |
+  |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+  | DANet     | ResNet-101  | 512x512 | 160000 |  -   | 45.2 | 69M | 1119G |
+  | OCRNet    | ResNet-101  | 512x512 | 160000 |  -   | 45.3 | **56M** | 923G  |
+  | DNL       | ResNet-101  | 512x512 | 160000 |  -   | 46.0 | 69M | 1249G |
+  | HamNet    | ResNet-101  | 512x512 | 160000 | 44.9 | **46.0** | **57M** | **918G**  |
+  | HamNet+   | ResNet-101  | 512x512 | 160000 | 45.6 | **46.8** | 69M | 1111G |
+  | - | - |  - |  - | - | - | - | - |
+  | DeeplabV3 | ResNeSt-101 | 512x512 | 160000 | 45.7 | 46.6 | 66M | 1051G |
+  | UPerNet   | Swin-T      | 512x512 | 160000 | 44.5 | 45.8 | 60M | 945G  |
+  | UPerNet   | ConvNeXt-T  | 512x512 | 160000 | 46.0 | 46.7 | 60M | 939G  |
+
 - 2021.09.09 - Release the [arXiv](https://arxiv.org/abs/2109.04553) version. This is a short version including some *future works* based Hamburger. A long version concerning the implicit perspective of Hamburger will be updated later.
 - 2021.05.12 - Release Chinese [Blog 3](https://zhuanlan.zhihu.com/p/370410446).
 - 2021.05.10 - Release Chinese [Blog 1](https://zhuanlan.zhihu.com/p/369769485) and [Blog 2](https://zhuanlan.zhihu.com/p/369855045) on Zhihu. Blog 3 is incoming.
