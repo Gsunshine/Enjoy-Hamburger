@@ -8,12 +8,27 @@ Squirtle (憨憨) invites you to enjoy Hamburger! 憨 shares the same pronunciat
 
 ## Update
 
+- 2022.03.26 - Release [Light-Ham](https://github.com/Gsunshine/Enjoy-Hamburger/blob/main/seg_light_ham), a light-weight segmentation baseline for modern backbones. Using the [VAN](https://github.com/Visual-Attention-Network) backbone, Light-Ham-VAN sets SOTA Pareto curves (Params/FLOPs-mIoU curves) up to date for ADE20K.
+
+  |   Method  |    Backbone     | Iters | mIoU | Params | FLOPs  | Config | Download  |
+  | :-------: | :-------------: | :---: | :--: | :----: | :----: | :----: | :-------: |
+  |  Light-Ham-D256  |    VAN-Tiny     | 160K | [40.9](https://github.com/Gsunshine/Enjoy-Hamburger/blob/main/seg_light_ham/work_dirs/hamnet_light_van_tiny_d256_512x512_160k_ade20k/eval_multi_scale_20220321_052101.json) | 4.2M | 6.5G | [config](https://github.com/Gsunshine/Enjoy-Hamburger/blob/main/seg_light_ham/configs/ham/hamnet_light_van_tiny_d256_512x512_160k_ade20k.py)  | [Google Drive](https://drive.google.com/file/d/11XjGgqgqWJOUKdIEWuInQJyi4wAChaWN/view?usp=sharing) |
+  |  Light-Ham  |    VAN-Tiny     | 160K | [42.3](https://github.com/Gsunshine/Enjoy-Hamburger/blob/main/seg_light_ham/work_dirs/hamnet_light_van_tiny_512x512_160k_ade20k/eval_multi_scale_20220323_130645.json) | 4.9M | 11.3G |  [config](https://github.com/Gsunshine/Enjoy-Hamburger/blob/main/seg_light_ham/configs/ham/hamnet_light_van_tiny_512x512_160k_ade20k.py)  | [Google Drive](https://drive.google.com/file/d/1MkjNxqOuoVtt58jIKY-11B6TfDrdH1sX/view?usp=sharing) |
+  |  Light-Ham  |    VAN-Small    | 160K | [45.7](https://github.com/Gsunshine/Enjoy-Hamburger/blob/main/seg_light_ham/work_dirs/hamnet_light_van_small_512x512_160k_ade20k/eval_multi_scale_20220323_124229.json) | 14.7M | 21.4G | [config](https://github.com/Gsunshine/Enjoy-Hamburger/blob/main/seg_light_ham/configs/ham/hamnet_light_van_small_512x512_160k_ade20k.py)  | [Google Drive](https://drive.google.com/file/d/1ocFNvV2Dr8kXsytY_9QO5FBGk1zTOgS3/view?usp=sharing) |
+  |  Light-Ham  |    VAN-Base     | 160K | [49.6](https://github.com/Gsunshine/Enjoy-Hamburger/blob/main/seg_light_ham/work_dirs/hamnet_light_van_base_512x512_160k_ade20k/eval_multi_scale_20220323_135751.json) | 27.4M | 34.4G | [config](https://github.com/Gsunshine/Enjoy-Hamburger/blob/main/seg_light_ham/configs/ham/hamnet_light_van_base_512x512_160k_ade20k.py)  | [Google Drive](https://drive.google.com/file/d/1-wVJgdztqWYv-MvCp6deFO0pDpciAg6h/view?usp=sharing) |
+  |  Light-Ham  |    VAN-Large    | 160K | [51.0](https://github.com/Gsunshine/Enjoy-Hamburger/blob/main/seg_light_ham/work_dirs/hamnet_light_van_large_512x512_160k_ade20k/eval_multi_scale_20220323_142104.json) | 45.6M | 55.0G | [config](https://github.com/Gsunshine/Enjoy-Hamburger/blob/main/seg_light_ham/configs/ham/hamnet_light_van_large_512x512_160k_ade20k.py)  | [Google Drive](https://drive.google.com/file/d/1iW-upuWcZybJyGv8_3qnpgGoX0Wq9emk/view?usp=sharing) |
+  |  -  | - | - | - | -  | - | - | - |
+  |  HamNet  |    VAN-Tiny-OS8     | 160K | 41.5 | 11.9M | 50.8G | [config](https://github.com/Gsunshine/Enjoy-Hamburger/blob/main/seg_light_ham/configs/upernet/VAN/upernet_van_tiny_512x512_160k_ade20k.py)  | [Google Drive](https://drive.google.com/file/d/1T1BxnBr4rErKaKiUwp_xF-Ik7j7jINJR/view?usp=sharing) |
+  |  HamNet  |    VAN-Small-OS8    | 160K | 45.1 | 24.2M | 100.6G |   [config](https://github.com/Gsunshine/Enjoy-Hamburger/blob/main/seg_light_ham/configs/upernet/VAN/upernet_van_small_512x512_160k_ade20k.py)  | [Google Drive](https://drive.google.com/file/d/1kfZIMZINOprSL6G113sm_KjPlE10nbWz/view?usp=sharing) |
+  |  HamNet  |    VAN-Base-OS8     | 160K | 48.7 | 36.9M | 153.6G | [config](https://github.com/Gsunshine/Enjoy-Hamburger/blob/main/seg_light_ham/configs/upernet/VAN/upernet_van_base_512x512_160k_ade20k.py)  | [Google Drive](https://drive.google.com/file/d/1jH1jx6KPckEL0-Ozje0koT8uFw0Bjyfi/view?usp=sharing) |
+  |  HamNet  |    VAN-Large-OS8    | 160K | 50.2 | 55.1M | 227.7G | [config](https://github.com/Gsunshine/Enjoy-Hamburger/blob/main/seg_light_ham/configs/upernet/VAN/upernet_van_large_512x512_160k_ade20k.py)  | [Google Drive](https://drive.google.com/file/d/1tPEQ9W1Pn_Bmkn3eGOtjM8dMZ0mTK4ka/view?usp=sharing) |
+
 - 2022.03.06 - Update HamNet using [MMSegmentation](https://github.com/open-mmlab/mmsegmentation). HamNet achieves SOTA performance for ResNet-101 backbone on ADE20K `val` set, enabling R101 to match modern backbones like [ResNeSt](https://github.com/zhanghang1989/ResNeSt), [Swin Transformer](https://github.com/microsoft/Swin-Transformer) or [ConvNeXt](https://github.com/facebookresearch/ConvNeXt) using similar computing budget. Code and [checkpoint](https://drive.google.com/file/d/1ja_SwzMg0a2NFW1d5gqg91QKgJrjuGYy/view?usp=sharing) are available.
   
   | Method | Backbone | Crop Size | Lr schd | mIoU (SS) | mIoU (MS) | Params | FLOPs |
   |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
   | DANet     | ResNet-101  | 512x512 | 160000 |  -   | 45.2 | 69M | 1119G |
-  | OCRNet    | ResNet-101  | 512x512 | 160000 |  -   | 45.3 | **56M** | 923G  |
+  | OCRNet    | ResNet-101  | 520x520 | 150000 |  -   | 45.3 | **56M** | 923G  |
   | DNL       | ResNet-101  | 512x512 | 160000 |  -   | 46.0 | 69M | 1249G |
   | HamNet    | ResNet-101  | 512x512 | 160000 | 44.9 | **46.0** | **57M** | **918G**  |
   | HamNet+   | ResNet-101  | 512x512 | 160000 | [45.6](https://github.com/Gsunshine/Enjoy-Hamburger/blob/main/seg_mm/work_dirs/ham_r101-d8_512x512_160k_ade20k/eval_single_scale_20220304_121400.json) | [**46.8**](https://github.com/Gsunshine/Enjoy-Hamburger/blob/main/seg_mm/work_dirs/ham_r101-d8_512x512_160k_ade20k/eval_multi_scale_20220304_115440.json) | 69M | 1111G |
