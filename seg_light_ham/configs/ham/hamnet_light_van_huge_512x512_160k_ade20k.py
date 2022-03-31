@@ -6,7 +6,7 @@ model = dict(
     pretrained='./seg_pretrained/van_huge_842.pth.tar',
     backbone=dict(
         type='van_huge',
-        drop_path_rate=0.4
+        drop_path_rate=0.3
         ),
     decode_head=dict(
         in_channels=[128, 320, 512],
