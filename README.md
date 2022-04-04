@@ -8,8 +8,10 @@ Squirtle (憨憨) invites you to enjoy Hamburger! 憨 shares the same pronunciat
 
 ## Update
 
-- 2022.04.01 - Add Light-Ham (VAN-Huge). Given 3 runs, Light-Ham (VAN-Base) produced **an averaged mIoU (MS) of 49.6** on ADE20K `val` set under results of 49.6, 49.9, and 49.2. Note that if we reduce steps K from 6 to 3 under Light-Ham (VAN-Base), the performance will drop to 48.8 (1 run), demonstrating the significance of optimization-driven strategy & MD in Hamburger.
-- 2022.03.26 - Release [Light-Ham](https://github.com/Gsunshine/Enjoy-Hamburger/blob/main/seg_light_ham), a light-weight segmentation baseline for modern backbones. Using the [VAN](https://github.com/Visual-Attention-Network) backbone, Light-Ham-VAN sets SOTA Pareto curves (Params/FLOPs-mIoU curves) up to date for ADE20K.
+- 2022.04.01 - Add Light-Ham (VAN-Huge). Given 3 runs, Light-Ham (VAN-Base) produced **an averaged mIoU (MS) of 49.6** on ADE20K `val` set from results of 49.6, 49.9, and 49.2. Note that if we reduce steps K from 6 to 3 under Light-Ham (VAN-Base), the performance will drop to 48.8 (1 run), demonstrating the significance of optimization-driven strategy & MD in Hamburger.
+- 2022.03.26 - Release [Light-Ham](https://github.com/Gsunshine/Enjoy-Hamburger/blob/main/seg_light_ham), a light-weight segmentation baseline for modern backbones. Using the [VAN](https://github.com/Visual-Attention-Network) backbone, Light-Ham-VAN sets the best Pareto frontier (Params/FLOPs-mIoU curves) up to date for ADE20K.
+
+  <div align=center><img src="assets/flops_parato.png" width="500" height="400" /></div>
 
   |   Method  |    Backbone     | Iters | mIoU | Params | FLOPs  | Config | Download  |
   | :-------: | :-------------: | :---: | :--: | :----: | :----: | :----: | :-------: |
@@ -20,6 +22,9 @@ Squirtle (憨憨) invites you to enjoy Hamburger! 憨 shares the same pronunciat
   |  Light-Ham  |    VAN-Base     | 160K | [49.6](https://github.com/Gsunshine/Enjoy-Hamburger/blob/main/seg_light_ham/work_dirs/hamnet_light_van_base_512x512_160k_ade20k/eval_multi_scale_20220323_135751.json) | 27.4M | 34.4G | [config](https://github.com/Gsunshine/Enjoy-Hamburger/blob/main/seg_light_ham/configs/ham/hamnet_light_van_base_512x512_160k_ade20k.py)  | [Google Drive](https://drive.google.com/file/d/1-wVJgdztqWYv-MvCp6deFO0pDpciAg6h/view?usp=sharing) |
   |  Light-Ham  |    VAN-Large    | 160K | [51.0](https://github.com/Gsunshine/Enjoy-Hamburger/blob/main/seg_light_ham/work_dirs/hamnet_light_van_large_512x512_160k_ade20k/eval_multi_scale_20220323_142104.json) | 45.6M | 55.0G | [config](https://github.com/Gsunshine/Enjoy-Hamburger/blob/main/seg_light_ham/configs/ham/hamnet_light_van_large_512x512_160k_ade20k.py)  | [Google Drive](https://drive.google.com/file/d/1iW-upuWcZybJyGv8_3qnpgGoX0Wq9emk/view?usp=sharing) |
   |  Light-Ham  |    VAN-Huge    | 160K | [51.5](https://github.com/Gsunshine/Enjoy-Hamburger/blob/main/seg_light_ham/work_dirs/hamnet_light_van_huge_512x512_160k_ade20k/eval_multi_scale_20220328_110130.json) | 61.1M | 71.8G | [config](https://github.com/Gsunshine/Enjoy-Hamburger/blob/main/seg_light_ham/configs/ham/hamnet_light_van_large_512x512_160k_ade20k.py)  | [Google Drive](https://drive.google.com/file/d/1ri-rnapaBRK2oW3CuYNZaTdGGUeZC9x7/view?usp=sharing) |
+  |  -  | - | - | - | -  | - | - | - |
+  |  Segformer  |    VAN-Base    | 160K | 48.4 | 29.3M | 68.6G | - | - |
+  |  Segformer  |    VAN-Large   | 160K | 50.3 | 47.5M | 89.2G | - | - |
   |  -  | - | - | - | -  | - | - | - |
   |  HamNet  |    VAN-Tiny-OS8     | 160K | 41.5 | 11.9M | 50.8G | [config](https://github.com/Gsunshine/Enjoy-Hamburger/blob/main/seg_light_ham/configs/upernet/VAN/upernet_van_tiny_512x512_160k_ade20k.py)  | [Google Drive](https://drive.google.com/file/d/1T1BxnBr4rErKaKiUwp_xF-Ik7j7jINJR/view?usp=sharing) |
   |  HamNet  |    VAN-Small-OS8    | 160K | 45.1 | 24.2M | 100.6G |   [config](https://github.com/Gsunshine/Enjoy-Hamburger/blob/main/seg_light_ham/configs/upernet/VAN/upernet_van_small_512x512_160k_ade20k.py)  | [Google Drive](https://drive.google.com/file/d/1kfZIMZINOprSL6G113sm_KjPlE10nbWz/view?usp=sharing) |
