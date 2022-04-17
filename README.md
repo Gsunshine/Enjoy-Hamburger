@@ -11,7 +11,7 @@ Squirtle (憨憨) invites you to enjoy Hamburger! 憨 shares the same pronunciat
 - 2022.04.01 - Add Light-Ham (VAN-Huge). Given 3 runs, Light-Ham (VAN-Base) produced **an averaged mIoU (MS) of 49.6** on ADE20K `val` set from results of 49.6, 49.9, and 49.2. Note that if we reduce steps K from 6 to 3 under Light-Ham (VAN-Base), the performance will drop to 48.8 (1 run), demonstrating the significance of optimization-driven strategy & MD in Hamburger.
 - 2022.03.26 - Release [Light-Ham](https://github.com/Gsunshine/Enjoy-Hamburger/blob/main/seg_light_ham), a light-weight segmentation baseline for modern backbones. Using the [VAN](https://github.com/Visual-Attention-Network) backbone, Light-Ham-VAN sets the best Pareto frontier (Params/FLOPs-mIoU curves) up to date for ADE20K.
 
-  <div align=center><img src="assets/flops_parato.png" width="500" height="400" /></div>
+  <div align=center><img src="assets/flops_pareto.png" width="500" height="400" /></div>
 
   |   Method  |    Backbone     | Iters | mIoU | Params | FLOPs  | Config | Download  |
   | :-------: | :-------------: | :---: | :--: | :----: | :----: | :----: | :-------: |
